@@ -1,0 +1,35 @@
+#include<stdio.h>
+
+int main(){
+    int vowel=0;
+    char s;
+
+    printf("Enter the character: ");
+    scanf("%c", &s);
+
+    switch(s){
+    case 'a':
+    case 'e':
+    case 'i':
+    case 'o':
+    case 'u':
+    case 'A':
+    case 'E':
+    case 'I':
+    case 'O':
+    case 'U':
+        vowel=1; break;
+    default:
+        vowel=0;
+    }
+
+
+
+    if(vowel==1)
+        printf("%c is vowel\n", s);
+    else
+        printf("%c is a consonant\n", s);
+
+
+    return 0;
+}
